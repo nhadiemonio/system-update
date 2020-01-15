@@ -1,4 +1,9 @@
 ---
+  - name: set hostname
+    hostname:
+      name: "{{ host_name }}"
+      
+
   - name: enable epel
     yum:
       name: "epel-release"
